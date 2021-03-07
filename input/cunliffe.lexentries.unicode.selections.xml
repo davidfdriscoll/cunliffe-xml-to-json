@@ -1,0 +1,513 @@
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title type="work">A Lexicon of the Homeric Dialect: revised.</title>
+
+        <author>Richard John Cunliffe</author>
+        <editor>Gregory Crane</editor>
+        
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <persName>Gregory Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <resp>Prepared under the supervision of</resp>
+          <name>Gregory Crane</name>
+        </respStmt>
+        <funder>GRC as volunteer.</funder>
+      </titleStmt>
+      <extent>About 10MB</extent>
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Richard John Cunliffe</author>
+            <title xml:lang="lat">A Lexicon of the Homeric Dialect.</title>
+            <imprint>
+              <pubPlace>London</pubPlace>
+              <publisher>Blackie and sons</publisher>
+              <date>1924</date>
+            </imprint>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(.+)"
+          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:sp/tei:l[@n='$1'])">
+          <p><gloss>This pointer pattern extracts line</gloss></p>
+        </cRefPattern>
+
+      </refsDecl>
+
+      <!-- <refsDecl n="CTS">
+    
+    <cRefPattern n="card" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+    <p><gloss>This pointer pattern extracts cards</gloss></p>
+    </cRefPattern>
+    
+    </refsDecl>-->
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="eng">English</language>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+
+      <change when="2017-12-30" who="GRC">Created the initial rough version.</change>
+
+    </revisionDesc>
+  </teiHeader>
+
+
+  <text>
+    <body>
+      <pb xml:id="p.1"/>
+      <head>A HOMERIC LEXICON</head>
+      <div xml:id="a-cunliffe-lex" type="textpart" n="ἆ">
+        <head><foreign xml:lang="greek">ἆ</foreign></head>
+        <p>Ah!</p>
+<p>With <term>voc. of</term> <ref xml:lang="greek" target="deilos-cunliffe-lex">δειλός</ref>. See <ref xml:lang="greek" target="deilos-cunliffe-lex-3.a"><foreign xml:lang="greek">δειλός</foreign> 3.a</ref>, <ref>3.b</ref>.</p>
+</div>
+
+
+      <div xml:id="aaatos-cunliffe-lex" type="textpart" n="ἀάατος">
+        <head><foreign xml:lang="greek">ἀάατος</foreign></head>
+        <p>[perh., with <ref xml:lang="greek" target="a1-cunliffe-prefix">ἀ-1</ref> for <foreign xml:lang="greek">ἀν-1</foreign>, <foreign xml:lang="greek">ἀάϝατος</foreign>, fr. <foreign xml:lang="greek">ἀϝάω</foreign>.  See <ref xml:lang="greek" target="aazo-cunliffe-lex">ἀάζω</ref>.]</p>
+
+        <div type="textpart">
+          <p><gloss>Thus, not liable to</gloss> <foreign xml:lang="greek">ἄτη</foreign>, that cannot be taken in vain, unimpeachable, decisive: <cit><quote xml:lang="greek">ἆάατον στυγὸς ὕδωρ</quote> <bibl n="Hom. Il. 18.271">Il. 18.271</bibl></cit>: <cit><quote xml:lang="greek">ἄεθλον ἀάατον</quote> <bibl n="Hom. Od. 21.91">Od. 21.91</bibl></cit>, <cit><quote xml:lang="greek">ἄεθλος ἀάατος</quote> <bibl n="Hom. Od. 22.5">Od. 22.5</bibl></cit>.</p>
+        </div>
+      </div>
+
+      <div xml:id="aages-cunliffe-lex" type="textpart" n="ἀαγής">
+        <head><foreign xml:lang="greek">ἀαγής</foreign></head>
+        <p><foreign xml:lang="greek">-ές</foreign> (<foreign xml:lang="greek">ἀϝαγής</foreign>)</p>
+<p>[<ref xml:lang="greek" target="a1-cunliffe-prefix">ἀ-1</ref>  + <foreign xml:lang="greek">(ϝ)αγ-</foreign>, <ref xml:lang="greek" target="agnymi-cunliffe-lex">ἄγνυμι</ref>.]</p>
+
+        <div type="textpart">
+          <p><gloss>Unbroken, unbreakable</gloss>: <cit><quote xml:lang="greek">ῥόπαλον</quote> <bibl n="Hom. Od. 11.575">Od. 11.575</bibl></cit>.</p>
+        </div>
+      </div>
+
+      <div xml:id="aazo-cunliffe-lex" type="textpart" n="ἀάζω">
+        <head><foreign xml:lang="greek">†ἀάζω</foreign></head>
+        <p>(<foreign xml:lang="greek">(ἀ)ϝάζω</foreign>)</p>
+<p>[<foreign xml:lang="greek">ἀφάτη</foreign>, <ref xml:lang="greek" target="ate-cunliffe-lex">ἄτη</ref>.]</p>
+
+        <p><term>2 sing. aor.</term> <cit><quote xml:lang="greek">ἄ͂ᾶσας (ἄϝασας)</quote> <bibl n="Hom. Il. 21.237">Il. 21.237</bibl></cit>.</p>
+
+        <p><term>3 sing.</term> <cit><quote xml:lang="greek">ἄᾶσε</quote> <bibl n="Hom. Od. 21.296">Od. 21.296</bibl></cit>, <bibl n="Hom. Od. 21.297">297</bibl>.</p>
+
+        <p><term>3 pl.</term> <cit><quote xml:lang="greek">ἄασαν</quote> <bibl n="Hom. Od. 10.68">Od. 10.68</bibl></cit>.</p>
+
+        <p><term>Contr. 3 sing.</term> <cit><quote xml:lang="greek">ἆσε</quote> <bibl n="Hom. Od. 11.61">Od. 11.61</bibl></cit>.</p>
+
+        <p><term>Mid. Aor.</term> <cit><quote xml:lang="greek">ἀᾶσάμην</quote> <bibl n="Hom. Il. 9.116">Il. 9.116</bibl></cit>, <bibl n="Hom. Il. 9.119">119</bibl>, <bibl n="Hom. Il. 19.137">Il. 19.137</bibl>.</p>
+
+        <p><term>3 sing.</term> <cit><quote xml:lang="greek">ἆάσατο</quote> <bibl n="Hom. Il. 9.537">Il. 9.537</bibl></cit>. <cit><quote xml:lang="greek">ἀάσατο</quote> <bibl n="Hom. Il. 11.340">Il. 11.340</bibl></cit>.</p>
+
+        <p><term>Contr.</term> <cit><quote xml:lang="greek">ἄσατο</quote> <bibl n="Hom. Il. 19.95">Il. 19.95</bibl></cit>.</p>
+
+        <p><term>Pass. Aor.</term> <cit><quote xml:lang="greek">ἆάσθην</quote> <bibl n="Hom. Il. 19.136">Il. 19.136</bibl></cit>.</p>
+
+        <p><term>3 sing.</term> <cit><quote xml:lang="greek">ἆάσθη</quote> <bibl n="Hom. Il. 16.685">Il. 16.685</bibl></cit>, <bibl n="Hom. Il. 19.113">Il. 19.113</bibl>: <bibl n="Hom. Od. 4.503">Od. 4.503</bibl>, <bibl n="Hom. Od. 4.509">509</bibl>.</p>
+
+        <p><term>Pple.</term> <cit><quote xml:lang="greek">ἆασθείς</quote> <bibl n="Hom. Od. 21.301">Od. 21.301</bibl></cit>. From <foreign xml:lang="greek">ἀ(ϝ)άω</foreign></p>
+
+        <p><term>3 sing. pres. mid.</term> <cit><quote xml:lang="greek">ἆᾶται</quote> <bibl n="Hom. Il. 19.91">Il. 19.91</bibl></cit>, <bibl n="Hom. Il. 19.129">129</bibl>.</p>
+        <div xml:id="aazo-cunliffe-lex-1" type="textpart">
+          <head>1</head>
+          <p><gloss>To smite with blindness of the mind, infatuate, make reckless</gloss> <bibl n="Hom. Il. 21.237">Il. 21.237</bibl>: <bibl n="Hom. Od. 10.68">Od. 10.68</bibl>, <bibl n="Hom. Od. 11.61">Od. 11.61</bibl>, <bibl n="Hom. Od. 21.296">Od. 21.296</bibl>, <bibl n="Hom. Od. 21.297">297</bibl>.</p>
+         <p>So in <term>mid.</term>: <cit><quote xml:lang="greek">Ἄτη (Ἄτην) ἣ πάντας ἀᾶται</quote> <bibl n="Hom. Il. 19.91">Il. 19.91</bibl></cit>, <bibl n="Hom. Il. 19.129">129</bibl>.</p>
+        </div>
+
+        <div xml:id="aazo-cunliffe-lex-2" type="textpart">
+          <head>2</head>
+          <p>In <term>mid.</term>, <gloss>to be so smitten, be made infatuated or reckless</gloss>: <cit><quote xml:lang="greek">ἀασάμην</quote> <bibl n="Hom. Il. 9.116">Il. 9.116</bibl></cit>, <bibl n="Hom. Il. 9.119">119</bibl>, <bibl n="Hom. Il. 19.137">Il. 19.137</bibl>. Cf. <bibl n="Hom. Il. 9.537">Il. 9.537</bibl>, <bibl n="Hom. Il. 11.340">Il. 11.340</bibl>, <bibl n="Hom. Il. 19.95">Il. 19.95</bibl>.</p>
+         <p>So in <term>pass.</term>: <cit><quote xml:lang="greek">μέγ' ἀάσθη</quote> <bibl n="Hom. Il. 16.685">Il. 16.685</bibl></cit>. Cf. <bibl n="Hom. Il. 19.113">Il. 19.113</bibl>, <bibl n="Hom. Il. 19.136">136</bibl>: <bibl n="Hom. Od. 4.503">Od. 4.503</bibl>, <bibl n="Hom. Od. 4.509">509</bibl>, <bibl n="Hom. Od. 21.301">Od. 21.301</bibl>.</p>
+        </div>
+      </div>
+
+      <div xml:id="aaptos-cunliffe-lex" type="textpart" n="ἄαπτος">
+        <head><foreign xml:lang="greek">ἄαπτος</foreign></head>
+        <p><foreign xml:lang="greek">-ον</foreign></p>
+<p>[app., with <foreign xml:lang="greek">ἀ-</foreign> for <ref xml:lang="greek" target="a1-cunliffe-prefix">ἀ-1</ref>, fr. <ref xml:lang="greek" target="hapto-cunliffe-lex">ἅπτω</ref>.]</p>
+
+        <div type="textpart">
+          <p><gloss>Thus, not to be touched, irresistible</gloss>: <cit><quote xml:lang="greek">χεῖρες (χεῖρας)</quote> <bibl n="Hom. Il. 1.567">Il. 1.567</bibl></cit>, <bibl n="Hom. Il. 21.450">Il. 21.450</bibl>, <bibl n="Hom. Il. 11.169">Il. 11.169</bibl>, <bibl n="Hom. Il. 13.49">Il. 13.49</bibl>, <bibl n="Hom. Od. 3.503">Od. 3.503</bibl>, etc.: <bibl n="Hom. Od. 11.502">Od. 11.502</bibl>, <bibl n="Hom. Od. 22.70">Od. 22.70</bibl>, <bibl n="Hom. Od. 22.248">248</bibl>.</p>
+        </div>
+      </div>
+
+      <div xml:id="aase-cunliffe-lex" type="textpart" n="ἄασε">
+        <head><foreign xml:lang="greek">ἄασε</foreign>, <foreign xml:lang="greek">ἀάσθη</foreign></head>
+        <p><term>3 sing. aor. act. and pass.</term> <ref xml:lang="greek" target="aazo-cunliffe-lex">ἀάζω</ref>.</p>
+      </div>
+
+      <div xml:id="aaschetos-cunliffe-lex" type="textpart" n="ἀάσχετος">
+        <head><foreign xml:lang="greek">ἀάσχετος</foreign></head>
+        <p>[an unexplained form.]</p>
+	<p>= <ref xml:lang="greek" target="aschetos-cunliffe-lex">ἄσχετος</ref>.</p>
+
+        <div type="textpart">
+          <p><gloss>Not to be restrained, ungovernable</gloss>: <cit><quote xml:lang="greek">μένος</quote> <bibl n="Hom. Il. 5.892">Il. 5.892</bibl></cit>.</p>
+         <p><gloss>Of grief, uncontrollable</gloss>: <cit><quote xml:lang="greek">πένθος</quote> <bibl n="Hom. Il. 24.708">Il. 24.708</bibl></cit>.</p>
+        </div>
+      </div>
+
+      <div xml:id="aatai-cunliffe-lex" type="textpart" n="ἀᾶται">
+        <head><foreign xml:lang="greek">ἀᾶται</foreign></head>
+        <p><term>3 sing. pres. mid.</term> <foreign xml:lang="greek">ἀάω</foreign>. See <ref xml:lang="greek" target="aazo-cunliffe-lex">ἀάζω</ref>.</p>
+      </div>
+
+      <div xml:id="aatos-cunliffe-lex" type="textpart" n="ἄατος">
+        <head><foreign xml:lang="greek">ἄατος</foreign></head>
+        <p>[<ref xml:lang="greek" target="a1-cunliffe-prefix">ἀ-1</ref> + <foreign xml:lang="greek">(σ)άω</foreign>.]</p>
+
+
+        <p><gloss>Except in</gloss> <bibl n="Hom. Il. 22.218">Il. 22.218</bibl> in <term>contr. form</term> <foreign xml:lang="greek">ἆτος</foreign>.</p>
+	<div type="textpart">
+	  <p><gloss>Insatiate of, indefatigable in.</gloss></p>
+<p>With <term>genit.</term>: <cit><quote xml:lang="greek">πολέμοιο</quote> <bibl n="Hom. Il. 5.388">Il. 5.388</bibl></cit>. Cf. <bibl n="Hom. Il. 5.863">Il. 5.863</bibl>, <bibl n="Hom. Il. 7.203">Il. 7.203</bibl>, <bibl n="Hom. Il. 11.430">Il. 11.430</bibl>, <bibl n="Hom. Il. 13.746">Il. 13.746</bibl>, <bibl n="Hom. Il. 22.218">Il. 22.218</bibl>: <bibl n="Hom. Od. 13.293">Od. 13.293</bibl>.</p>
+        </div>
+      </div>
+
+      <div xml:id="abaceo-cunliffe-lex" type="textpart" n="ἀβακέω">
+        <head><foreign xml:lang="greek">ἀβακέω</foreign></head>
+        <p>[<ref xml:lang="greek" target="a1-cunliffe-prefix">ἀ-1</ref> + <foreign xml:lang="greek">βακ-</foreign>, <ref xml:lang="greek" target="bazo-cunliffe-lex">βάζω</ref>. <gloss>To be speechless</gloss>.]</p>
+<p>Hence, <gloss>to be ignorant, fail in recognition</gloss> <bibl n="Hom. Od. 4.249">Od. 4.249</bibl>.</p>
+      </div>
+
+      <div xml:id="ables-cunliffe-lex" type="textpart" n="ἀβλής">
+        <head><foreign xml:lang="greek">ἀβλής</foreign></head>
+        <p><foreign xml:lang="greek">-ῆτος</foreign></p>
+<p>[<ref xml:lang="greek" target="a1-cunliffe-prefix">ἀ-1</ref> + <foreign xml:lang="greek">βλη-</foreign>, <ref xml:lang="greek" target="ballo-cunliffe-lex">βάλλω</ref>.]</p>
+<p><gloss>Not (yet) shot, new</gloss>: <cit><quote xml:lang="greek">ἰόν</quote> <bibl n="Hom. Il. 4.117">Il. 4.117</bibl></cit>.</p>
+      </div>
+
+      <div xml:id="abletos-cunliffe-lex" type="textpart" n="ἄβλητος">
+        <head><foreign xml:lang="greek">ἄβλητος</foreign></head>
+        <p>[as <ref target="ables-cunliffe-lex" n="prec">ἀβλής</ref>.]</p>
+<p><gloss>Unstruck (by a missile)</gloss> <bibl n="Hom. Il. 4.540">Il. 4.540</bibl>.</p>
+      </div>
+
+      <div xml:id="ablechros-cunliffe-lex" type="textpart" n="ἀβληχρός">
+        <head><foreign xml:lang="greek">ἀβληχρός</foreign></head>
+        <p><foreign xml:lang="greek">-ή</foreign>, <foreign xml:lang="greek">-όν</foreign>.</p>
+<p>App., <gloss>feeble, weak, gentle</gloss>: <cit><quote xml:lang="greek">χεῖρα</quote> <bibl n="Hom. Il. 5.337">Il. 5.337</bibl></cit>, <cit><quote xml:lang="greek">τείχεα</quote> <bibl n="Hom. Il. 21.178">Il. 21.178</bibl></cit>: <cit><quote xml:lang="greek">θάνατος</quote> <bibl n="Hom. Od. 11.135">Od. 11.135</bibl></cit>, <bibl n="Hom. Od. 23.282">Od. 23.282</bibl>.</p>
+      </div>
+
+      <div xml:id="abromos-cunliffe-lex" type="textpart" n="ἄβρομος">
+        <head><foreign xml:lang="greek">ἄβρομος</foreign></head>
+        <p>[<ref xml:lang="greek" target="a2-cunliffe-prefix">ἀ-2</ref> + <ref xml:lang="greek" target="bromos-cunliffe-lex">βρόμος</ref>.]</p>
+
+        <div type="textpart">
+          <p><gloss>With united noise</gloss> <bibl n="Hom. Il. 13.41">Il. 13.41</bibl>.</p>
+        </div>
+      </div>
+
+      <div xml:id="abrotaxo-cunliffe-lex" type="textpart" n="†ἀβροτάξω">
+        <head><foreign xml:lang="greek">†ἀβροτάξω</foreign></head>
+        <p>[<foreign xml:lang="greek">ἀμβροτ-</foreign>, <foreign xml:lang="greek">ἤμβροτον</foreign>. See <ref xml:lang="greek" target="hamartano-cunliffe-lex">ἁμαρτάνω</ref>.]</p>
+
+        <p><term>1 pl. aor. subj.</term> <foreign xml:lang="greek">ἀβροτάξομεν</foreign>.</p>
+
+        <div type="textpart">
+          <p><gloss>With genit., to miss, fail of meeting</gloss>: <cit><quote xml:lang="greek">ἀλλήλοιιν</quote> <bibl n="Hom. Il. 10.65">Il. 10.65</bibl></cit>.</p>
+        </div>
+      </div>
+
+      <div xml:id="abrote-cunliffe-lex" type="textpart" n="ἀβρότη">
+        <head><foreign xml:lang="greek">ἀβρότη</foreign></head>
+        <p>App. = <foreign xml:lang="greek">ἀμβροσιν</foreign>,</p>
+<p><term>fem. of</term> <ref xml:lang="greek" target="ambrosios-cunliffe-lex">ἀμβρόσιος</ref>: <cit><quote xml:lang="greek">νύξ</quote> <bibl n="Hom. Il. 14.78">Il. 14.78</bibl></cit>.</p>
+      </div>
+
+      <div xml:id="agaasthe-cunliffe-lex" type="textpart" n="ἀγάασθε">
+        <head><foreign xml:lang="greek">ἀγάασθε</foreign></head>
+        <p><term>2 pl.</term> <ref xml:lang="greek" target="agamai-cunliffe-lex">ἄγαμαι</ref>.</p>
+      </div>
+
+      <div xml:id="agagon-cunliffe-lex" type="textpart" n="ἄγαγον">
+        <head><foreign xml:lang="greek">ἄγαγον</foreign></head>
+        <p><term>aor.</term> <ref xml:lang="greek" target="ago-cunliffe-lex">ἄγω</ref>.</p>
+      </div>
+
+      <div xml:id="agathos-cunliffe-lex" type="textpart" n="ἀγαθός">
+        <head><foreign xml:lang="greek">ἀγαθός</foreign></head>
+        <p><foreign xml:lang="greek">-ή</foreign>, <foreign xml:lang="greek">-όν</foreign>.</p>
+        <div xml:id="agathos-cunliffe-lex-1" type="textpart">
+          <head>1</head>
+          <p><gloss>Well-born, noble</gloss> <bibl n="Hom. Il. 14.113">Il. 14.113</bibl>, <bibl n="Hom. Il. 21.109">Il. 21.109</bibl>: <bibl n="Hom. Od. 4.611">Od. 4.611</bibl>, <bibl n="Hom. Od. 18.276">Od. 18.276</bibl>, <bibl n="Hom. Od. 21.335">Od. 21.335</bibl>.</p>
+          <p><term>Absol.</term>: <cit><quote xml:lang="greek">τοῖς ἀγαθοῖσιν</quote> <bibl n="Hom. Od. 15.324">Od. 15.324</bibl></cit>, <cit><quote xml:lang="greek">οὐκ ἀγαθοῖσιν</quote> <bibl n="Hom. Od. 18.383">Od. 18.383</bibl></cit> (<hi rend="ital">v. l.</hi> <foreign xml:lang="greek">οὐτιδανοῖσιν</foreign>).</p>
+        </div>
+
+        <div xml:id="agathos-cunliffe-lex-2" type="textpart">
+          <head>2</head>
+          <p><gloss>Warlike, soldierly, stout, skilful in fight</gloss> <bibl n="Hom. Il. 1.131">Il. 1.131</bibl>, <bibl n="Hom. Il. 4.181">Il. 4.181</bibl>, <bibl n="Hom. Il. 7.478">Il. 7.478</bibl>, <bibl n="Hom. Il. 13.314">Il. 13.314</bibl>, etc.</p>
+         <p><term>Absol.</term>: <cit><quote xml:lang="greek">ἀγαθοῖσι μάχεσθαι</quote> <bibl n="Hom. Il. 13.238">Il. 13.238</bibl></cit>. Cf. <bibl n="Hom. Il. 21.280">Il. 21.280</bibl> (<term>twice</term>), etc.</p>
+        </div>
+
+        <div xml:id="agathos-cunliffe-lex-3" type="textpart">
+          <head>3</head>
+          <p>Passing into <ref>4</ref>: <cit><quote xml:lang="greek">ἀ. πάϊς Ἀλκινόοιο</quote> <bibl n="Hom. Od. 8.130">Od. 8.130</bibl></cit>, <bibl n="Hom. Od. 8.143">143</bibl>.</p>
+        </div>
+
+        <div xml:id="agathos-cunliffe-lex-4" type="textpart">
+          <head>4</head>
+          <p><gloss>Good, worthy, serviceable, skilled</gloss>: <cit><quote xml:lang="greek">ἰητῆρε</quote> <bibl n="Hom. Il. 2.732">Il. 2.732</bibl></cit>. Cf. <bibl n="Hom. Il. 3.179">Il. 3.179</bibl>, <bibl n="Hom. Il. 3.237">237</bibl>, <bibl n="Hom. Il. 13.666">Il. 13.666</bibl>, <bibl n="Hom. Il. 23.770">Il. 23.770</bibl>: <cit><quote xml:lang="greek">πὺξ ἀγαθόν</quote> <bibl n="Hom. Od. 11.300">Od. 11.300</bibl></cit>.</p>
+         <p>For <foreign xml:lang="greek">βοὴν ἀ</foreign>. see <ref xml:lang="greek" target="boe-cunliffe-lex-2"><foreign xml:lang="greek">βοή</foreign> 2</ref>.</p>
+        </div>
+
+        <div xml:id="agathos-cunliffe-lex-5" type="textpart">
+          <head>5</head>
+          <p><gloss>In moral sense, good, of right feeling</gloss>: <cit><quote xml:lang="greek">ἀ. καὶ ἐχέφρων</quote> <bibl n="Hom. Il. 9.341">Il. 9.341</bibl></cit>.</p>
+         <p><gloss>Of the mind, showing discretion, good judgment or discernment, well-balanced</gloss>: <cit><quote xml:lang="greek">φρεσὶ κέχρητ' ἀγαθῇσιν</quote> <bibl n="Hom. Od. 3.266">Od. 3.266</bibl></cit>. Cf. <bibl n="Hom. Od. 14.421">Od. 14.421</bibl>, <bibl n="Hom. Od. 16.398">Od. 16.398</bibl>, <bibl n="Hom. Od. 24.194">Od. 24.194</bibl>.</p>
+         <p><gloss>Sim.</gloss> <cit><quote xml:lang="greek">φρεσὶ μαίνεται οὐκ ἀγαθῇσιν</quote> <bibl n="Hom. Il. 21.360">Il. 21.360</bibl></cit>.</p>
+        </div>
+
+        <div xml:id="agathos-cunliffe-lex-6" type="textpart">
+          <head>6</head>
+          <p><gloss>Of things or abstractions, good of their kind, good, excellent, fine, helpful, in place, or the like</gloss>: <cit><quote xml:lang="greek">βουλάς</quote> <bibl n="Hom. Il. 2.273">Il. 2.273</bibl></cit>, <cit><quote xml:lang="greek">ὄψιν</quote> <note>(his fair . . .)</note> <bibl n="Hom. Il. 24.632">Il. 24.632</bibl></cit>. Cf. <bibl n="Hom. Il. 9.627">Il. 9.627</bibl>, <bibl n="Hom. Il. 11.793">Il. 11.793</bibl> = <bibl n="Hom. Il. 15.404">Il. 15.404</bibl>, <bibl n="Hom. Il. 23.810">Il. 23.810</bibl>: <cit><quote xml:lang="greek">βίον</quote> <note>(pleasant)</note> <bibl n="Hom. Od. 15.491">Od. 15.491</bibl></cit>. Cf. <bibl n="Hom. Od. 9.27">Od. 9.27</bibl>, <bibl n="Hom. Od. 13.246">Od. 13.246</bibl>, <bibl n="Hom. Od. 15.405">Od. 15.405</bibl>, <bibl n="Hom. Od. 15.507">507</bibl>, <bibl n="Hom. Od. 17.347">Od. 17.347</bibl>, <bibl n="Hom. Od. 17.352">352</bibl>, <bibl n="Hom. Od. 24.249">Od. 24.249</bibl>, <bibl n="Hom. Od. 24.286">286</bibl>.</p>
+        </div>
+
+        <div xml:id="agathos-cunliffe-lex-7" type="textpart">
+          <head>7</head>
+          <p><term>Absol. in <term>neut.</term></term> <foreign xml:lang="greek">ἀγαθόν</foreign>.</p>
+          <div xml:id="agathos-cunliffe-lex-7.a" type="textpart">
+            <head>a</head>
+<p><gloss>A good or desirable thing</gloss> <bibl n="Hom. Il. 2.204">Il. 2.204</bibl>.</p>
+           <p>With <term>infin.</term>: <cit><quote xml:lang="greek">ἀ. νυκτὶ πιθέσθαι</quote> <bibl n="Hom. Il. 6.282">Il. 6.282</bibl></cit> = 293. Cf. <bibl n="Hom. Il. 24.130">Il. 24.130</bibl>, <bibl n="Hom. Il. 24.425">425</bibl>: <bibl n="Hom. Od. 3.196">Od. 3.196</bibl>.</p>
+          </div>
+          <div xml:id="agathos-cunliffe-lex-7.b" type="textpart">
+            <head>b</head>
+<p><gloss>What is good, good</gloss>: <cit><quote xml:lang="greek">ἀ. τελέσειεν</quote> <bibl n="Hom. Od. 2.34">Od. 2.34</bibl></cit>. Cf. <bibl n="Hom. Od. 4.237">Od. 4.237</bibl>, <bibl n="Hom. Od. 4.392">392</bibl>, <bibl n="Hom. Od. 21.63">Od. 21.63</bibl>.</p>
+           <p><gloss>So</gloss> <cit><quote xml:lang="greek">εἰπεῖν εἰς ἀ.</quote> <note>(for the general good)</note> <bibl n="Hom. Il. 9.102">Il. 9.102</bibl></cit>, <cit><quote xml:lang="greek">πείσεται εἰς ἀ.</quote> <note>(for his own good)</note> <bibl n="Hom. Il. 11.789">Il. 11.789</bibl></cit>.</p>
+          </div>
+        </div>
+
+        <div xml:id="agathos-cunliffe-lex-8" type="textpart">
+          <head>8</head>
+          <p><term>Absol. in <term>neut. pl.</term></term> <foreign xml:lang="greek">ἀγαθά</foreign>.</p>
+          <div xml:id="agathos-cunliffe-lex-8.a" type="textpart">
+            <head>a</head>
+<p>In sense <ref>7.b</ref> <bibl n="Hom. Od. 22.209">Od. 22.209</bibl>.</p>
+           <p><gloss>So</gloss> <cit><quote xml:lang="greek">εἰς ἀ. φρονέων</quote> <bibl n="Hom. Il. 23.305">Il. 23.305</bibl></cit>. Cf. <bibl n="Hom. Il. 24.173">Il. 24.173</bibl>: <bibl n="Hom. Od. 1.43">Od. 1.43</bibl>.</p>
+          </div>
+          <div xml:id="agathos-cunliffe-lex-8.b" type="textpart">
+            <head>b</head>
+<p><gloss>What is morally right</gloss>: <cit><quote xml:lang="greek">ἀ. φρονέοντα</quote> <bibl n="Hom. Il. 7.162">Il. 7.162</bibl></cit>.</p>
+          </div>
+          <div xml:id="agathos-cunliffe-lex-8.c" type="textpart">
+            <head>c</head>
+<p><gloss>Good things to eat</gloss> <bibl n="Hom. Od. 14.441">Od. 14.441</bibl>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div xml:id="agaiomai-cunliffe-lex" type="textpart" n="ἀγαίομαι">
+        <head><foreign xml:lang="greek">ἀγαίομαι</foreign></head>
+        <p>= <ref xml:lang="greek" target="agamai-cunliffe-lex-5"><foreign xml:lang="greek">ἄγαμαι</foreign> 5</ref>: <cit><quote xml:lang="greek">κακὰ ἔργα</quote> <bibl n="Hom. Od. 20.16">Od. 20.16</bibl></cit>.</p>
+      </div>
+
+      <div xml:id="agaclees-cunliffe-lex" type="textpart" n="ἀγακλεής">
+        <head><foreign xml:lang="greek">ἀγακλεής</foreign></head>
+        <p><foreign xml:lang="greek">-ές</foreign></p>
+<p>[<ref xml:lang="greek" target="aga-cunliffe-prefix">ἀγα-</ref> + <ref xml:lang="greek" target="cleos-cunliffe-lex">κλέος</ref>.]</p>
+
+        <p><term>Genit.</term> <foreign xml:lang="greek">ἀγακλῆος</foreign> (for <foreign xml:lang="greek">ἀγακλεέος</foreign>) <bibl n="Hom. Il. 16.738">Il. 16.738</bibl>, <bibl n="Hom. Il. 23.529">Il. 23.529</bibl>.</p>
+<p><gloss>Very famous, glorious, splendid, worthy</gloss> <bibl n="Hom. Il. 16.738">Il. 16.738</bibl>, <bibl n="Hom. Il. 17.716">Il. 17.716</bibl>, <bibl n="Hom. Il. 21.379">Il. 21.379</bibl> <bibl n="Hom. Il. 23.529">Il. 23.529</bibl>.</p>
+      </div>
+
+      <div xml:id="agacleitos-cunliffe-lex" type="textpart" n="ἀγακλειτός">
+        <head><foreign xml:lang="greek">ἀγακλειτός</foreign></head>
+        <p><foreign xml:lang="greek">-ή</foreign>, <foreign xml:lang="greek">-όν</foreign></p>
+<p>[<ref xml:lang="greek" target="aga-cunliffe-prefix">ἀγα-</ref> + <ref xml:lang="greek" target="cleitos2-cunliffe-lex">κλειτός</ref>.]</p>
+<p>= <ref target="agaclees-cunliffe-lex" n="prec">ἀγακλεής</ref>. <pb xml:id="p.2"/> <bibl n="Hom. Il. 2.564">Il. 2.564</bibl>, <bibl n="Hom. Il. 12.101">Il. 12.101</bibl>, <bibl n="Hom. Il. 16.463">Il. 16.463</bibl>, <bibl n="Hom. Il. 18.45">Il. 18.45</bibl>, <bibl n="Hom. Il. 21.530">Il. 21.530</bibl>: <bibl n="Hom. Od. 3.59">Od. 3.59</bibl>, <bibl n="Hom. Od. 6.202">Od. 6.202</bibl>, <bibl n="Hom. Od. 17.370">Od. 17.370</bibl>, <bibl n="Hom. Od. 17.468">468</bibl>, <bibl n="Hom. Od. 18.351">Od. 18.351</bibl>, <bibl n="Hom. Od. 21.275">Od. 21.275</bibl>.</p>
+      </div>
+
+      <div xml:id="agaclytos-cunliffe-lex" type="textpart" n="ἀγακλυτός">
+        <head><foreign xml:lang="greek">ἀγακλυτός</foreign></head>
+        <p>[<ref xml:lang="greek" target="aga-cunliffe-prefix">ἀγα-</ref> + <ref xml:lang="greek" target="clytos-cunliffe-lex">κλυτός</ref>.]</p>
+<p>= <ref target="agacleitos-cunliffe-lex" n="prec">ἀγακλειτός</ref>. <bibl n="Hom. Il. 7.436">Il. 7.436</bibl>: <bibl n="Hom. Od. 3.388">Od. 3.388</bibl>, <bibl n="Hom. Od. 3.428">428</bibl>, <bibl n="Hom. Od. 6.3">Od. 6.3</bibl>, <bibl n="Hom. Od. 6.46">46</bibl>, <bibl n="Hom. Od. 8.502">Od. 8.502</bibl>, <bibl n="Hom. Od. 14.237">Od. 14.237</bibl>, <bibl n="Hom. Od. 21.295">Od. 21.295</bibl>, <bibl n="Hom. Od. 24.103">Od. 24.103</bibl>.</p>
+      </div>
+
+      <div xml:id="agallomai-cunliffe-lex" type="textpart" n="ἀγάλλω">
+        <head><foreign xml:lang="greek">ἀγάλλομαι</foreign></head>
+        <p>(<foreign xml:lang="greek">ἐπ-</foreign>.)</p>
+
+        <div type="textpart">
+          <p><gloss>To exult</gloss> <bibl n="Hom. Il. 12.114">Il. 12.114</bibl>, <bibl n="Hom. Il. 17.473">Il. 17.473</bibl>, <bibl n="Hom. Il. 18.132">Il. 18.132</bibl>.</p>
+         <p><gloss>To exult in, take delight in</gloss>.</p>
+<p>With <term>dat.</term>: <cit><quote xml:lang="greek">πτερύγεσσιν</quote> <bibl n="Hom. Il. 2.462">Il. 2.462</bibl></cit>, <cit><quote xml:lang="greek">πώλοισιν</quote> <bibl n="Hom. Od. 3.222">Od. 3.222</bibl></cit>. Cf. <bibl n="Hom. Od. 5.176">Od. 5.176</bibl>, <bibl n="Hom. Od. 7.272">Od. 7.272</bibl>.</p>
+        </div>
+      </div>
+
+      <div xml:id="agalma-cunliffe-lex" type="textpart" n="ἄγαλμα">
+        <head><foreign xml:lang="greek">ἄγαλμα</foreign></head>
+        <p><foreign xml:lang="greek">-ατος</foreign>, <foreign xml:lang="greek">τό</foreign></p>
+<p>[<ref xml:lang="greek" target="agallomai-cunliffe-lex">ἀγάλλομαι</ref>.]</p>
+        <div xml:id="agalma-cunliffe-lex-1" type="textpart">
+          <head>1</head>
+          <p><gloss>An ornament, a glory or delight</gloss> <bibl n="Hom. Il. 4.144">Il. 4.144</bibl>: <bibl n="Hom. Od. 4.602">Od. 4.602</bibl>, <bibl n="Hom. Od. 4.300">Od. 4.300</bibl>, <bibl n="Hom. Od. 19.257">Od. 19.257</bibl>.</p>
+        </div>
+
+        <div xml:id="agalma-cunliffe-lex-2" type="textpart">
+          <head>2</head>
+          <p><gloss>Of things offered to the gods</gloss>: <cit><quote xml:lang="greek">πόλλʼ ἀγάλματʼ ἀνῆψεν</quote> <bibl n="Hom. Od. 3.274">Od. 3.274</bibl></cit>. Cf. <bibl n="Hom. Od. 3.438">Od. 3.438</bibl>, <bibl n="Hom. Od. 8.509">Od. 8.509</bibl>, <bibl n="Hom. Od. 12.347">Od. 12.347</bibl>.</p>
+        </div>
+      </div>
+
+      <div xml:id="agamai-cunliffe-lex" type="textpart" n="†ἄγαμαι">
+        <head><foreign xml:lang="greek">†ἄγαμαι</foreign></head>
+        <p><term>1 sing. pres.</term> <cit><quote xml:lang="greek">ἄγαμαι</quote> <bibl n="Hom. Od. 7.168">Od. 7.168</bibl></cit>, <bibl n="Hom. Od. 23.175">Od. 23.175</bibl>.</p>
+
+        <p><term>2 pl.</term> <cit><quote xml:lang="greek">ἀγάασθε</quote> <bibl n="Hom. Od. 5.119">Od. 5.119</bibl></cit>. <cit><quote xml:lang="greek">ἄγασθε</quote> <bibl n="Hom. Od. 5.129">Od. 5.129</bibl></cit>.</p>
+
+        <p><term>Infin.</term> <cit><quote xml:lang="greek">ἀγάασθαι</quote> <bibl n="Hom. Od. 16.203">Od. 16.203</bibl></cit>.</p>
+
+        <p><term>2 pl. impf.</term> <cit><quote xml:lang="greek">ἠγάασθε</quote> <bibl n="Hom. Od. 5.122">Od. 5.122</bibl></cit>.</p>
+
+        <p><term>Fut. infin.</term> <cit><quote xml:lang="greek">ἀγάσεσθαι</quote> <bibl n="Hom. Od. 8.565">Od. 8.565</bibl></cit>, <bibl n="Hom. Od. 13.173">Od. 13.173</bibl>. <cit><quote xml:lang="greek">ἀγάσσεσθαι</quote> <bibl n="Hom. Od. 4.181">Od. 4.181</bibl></cit>.</p>
+
+        <p><term>3 sing. aor.</term> <cit><quote xml:lang="greek">ἠγάσσατο</quote> <bibl n="Hom. Il. 3.181">Il. 3.181</bibl></cit>. <cit><quote xml:lang="greek">ἀγάσσατο</quote> <bibl n="Hom. Il. 17.71">Il. 17.71</bibl></cit>: <bibl n="Hom. Od. 4.658">Od. 4.658</bibl>.</p>
+
+        <p><term>1 pl.</term> <cit><quote xml:lang="greek">ἀγασσάμεθα</quote> <bibl n="Hom. Il. 3.224">Il. 3.224</bibl></cit>: <bibl n="Hom. Od. 10.249">Od. 10.249</bibl>.</p>
+
+        <p><term>3 pl.</term> <cit><quote xml:lang="greek">ἀγάσαντο</quote> <bibl n="Hom. Od. 4.71">Od. 4.71</bibl></cit>, <bibl n="Hom. Od. 23.211">Od. 23.211</bibl>.</p>
+
+        <p><term>2 sing. subj.</term> <cit><quote xml:lang="greek">ἀγάσσεαι</quote> <bibl n="Hom. Od. 1.389">Od. 1.389</bibl></cit>.</p>
+
+        <p><term>2 pl.</term> <cit><quote xml:lang="greek">ἀγάσησθε</quote> <bibl n="Hom. Il. 14.111">Il. 14.111</bibl></cit>.</p>
+
+        <p><term>Pple.</term> <cit><quote xml:lang="greek">ἀγασσάμενος, -ου</quote> <bibl n="Hom. Il. 6.41">Il. 6.41</bibl></cit>, <bibl n="Hom. Il. 6.404">404</bibl>, <bibl n="Hom. Il. 8.29">Il. 8.29</bibl>, <bibl n="Hom. Il. 9.51">Il. 9.51</bibl>, <bibl n="Hom. Il. 9.431">431</bibl>, <bibl n="Hom. Il. 9.694">694</bibl>, <bibl n="Hom. Il. 9.711">711</bibl>, <bibl n="Hom. Il. 23.639">Il. 23.639</bibl>: <bibl n="Hom. Od. 2.67">Od. 2.67</bibl>, <bibl n="Hom. Od. 23.64">Od. 23.64</bibl>.</p>
+        <div xml:id="agamai-cunliffe-lex-1" type="textpart">
+          <head>1</head>
+          <p><gloss>To wonder, marvel</gloss>: <cit><quote xml:lang="greek">οἵ κʼ ἀγασσάμενοι οἶον ἐπόρσειαν</quote> <bibl n="Hom. Il. 6.41">Il. 6.41</bibl></cit> (<gloss>admiring his chivalry</gloss>; or perh. in sense <ref>3</ref>,  <gloss>grudging him honour)</gloss>: <cit><quote xml:lang="greek">ἀγάσσατο θυμός</quote> <bibl n="Hom. Od. 4.658">Od. 4.658</bibl></cit>. Cf. <bibl n="Hom. Od. 16.203">Od. 16.203</bibl>, <bibl n="Hom. Od. 18.71">Od. 18.71</bibl>.</p>
+        </div>
+
+        <div xml:id="agamai-cunliffe-lex-2" type="textpart">
+          <head>2</head>
+          <p><gloss>To wonder or marvel at</gloss> <bibl n="Hom. Il. 3.181">Il. 3.181</bibl>, <bibl n="Hom. Il. 3.224">224</bibl>, <bibl n="Hom. Il. 6.404">Il. 6.404</bibl>, <bibl n="Hom. Il. 8.29">Il. 8.29</bibl>, <bibl n="Hom. Il. 9.51">Il. 9.51</bibl>, <bibl n="Hom. Il. 9.431">431</bibl>, <bibl n="Hom. Il. 9.694">694</bibl>, <bibl n="Hom. Il. 9.711">711</bibl>: <bibl n="Hom. Od. 7.168">Od. 7.168</bibl>, <bibl n="Hom. Od. 10.249">Od. 10.249</bibl>.</p>
+        </div>
+
+        <div xml:id="agamai-cunliffe-lex-3" type="textpart">
+          <head>3</head>
+          <p><gloss>To be jealous, bear a grudge</gloss> <bibl n="Hom. Il. 14.111">Il. 14.111</bibl>, <bibl n="Hom. Il. 23.639">Il. 23.639</bibl>.</p>
+         <p>With <term>dat. of person</term>: <cit><quote xml:lang="greek">οἱ</quote> <bibl n="Hom. Il. 17.71">Il. 17.71</bibl></cit>: <bibl n="Hom. Od. 5.122">Od. 5.122</bibl>, <cit><quote xml:lang="greek">ἡμῖν</quote> <bibl n="Hom. Od. 8.565">Od. 8.565</bibl></cit>, <bibl n="Hom. Od. 13.173">Od. 13.173</bibl>.</p>
+         <p>With <term>complementary infin.</term>: <cit><quote xml:lang="greek">θεαῖς ἀγάασθε παῤ ἀνδράσιν εὐνάζεσθαι</quote> <bibl n="Hom. Od. 5.119">Od. 5.119</bibl></cit>. Cf. <bibl n="Hom. Od. 5.129">Od. 5.129</bibl>, <bibl n="Hom. Od. 23.211">Od. 23.211</bibl>.</p>
+         <p>With <term>acc.</term>: <cit><quote xml:lang="greek">τά</quote> <bibl n="Hom. Od. 4.181">Od. 4.181</bibl></cit>.</p>
+        </div>
+
+        <div xml:id="agamai-cunliffe-lex-4" type="textpart">
+          <head>4</head>
+          <p><gloss>To be offended or hurt</gloss> <bibl n="Hom. Od. 23.175">Od. 23.175</bibl>.</p>
+        </div>
+
+        <div xml:id="agamai-cunliffe-lex-5" type="textpart">
+          <head>5</head>
+          <p><gloss>To be indignant or offended at</gloss>: <cit><quote xml:lang="greek">κακὰ ἔργα</quote> <bibl n="Hom. Od. 2.67">Od. 2.67</bibl></cit>. Cf. <bibl n="Hom. Od. 23.64">Od. 23.64</bibl>.</p>
+         <p>With <term>dat. of person</term>: <cit><quote xml:lang="greek">εἴ πέρ μοι ἀγάσσεαι</quote> <bibl n="Hom. Od. 1.389">Od. 1.389</bibl></cit>.</p>
+        </div>
+      </div>
+
+      <div xml:id="agamos-cunliffe-lex" type="textpart" n="ἄγαμος">
+        <head><foreign xml:lang="greek">ἄγαμος</foreign></head>
+        <p>[<ref xml:lang="greek" target="a1-cunliffe-prefix">ἀ-1</ref> + <ref xml:lang="greek" target="gamos-cunliffe-lex">γάμος</ref>]</p>
+<p><gloss>Unmarried</gloss> <bibl n="Hom. Il. 3.40">Il. 3.40</bibl>.</p>
+      </div>
+
+      <div xml:id="aganniphos-cunliffe-lex" type="textpart" n="ἀγάννιφος">
+        <head><foreign xml:lang="greek">ἀγάννιφος</foreign></head>
+        <p>[<ref xml:lang="greek" target="aga-cunliffe-prefix">ἀγα-</ref> + <ref xml:lang="greek" target="nipho-cunliffe-lex">νίφω</ref>.]</p>
+
+        <div type="textpart">
+          <p><gloss>Very snowy, snowclad.</gloss></p>
+<p><gloss>Epithet of Olympus</gloss> <bibl n="Hom. Il. 1.420">Il. 1.420</bibl>, <bibl n="Hom. Il. 18.186">Il. 18.186</bibl>.</p>
+        </div>
+      </div>
+
+      <div xml:id="aganos-cunliffe-lex" type="textpart" n="ἀγανός">
+        <head><foreign xml:lang="greek">ἀγανός</foreign></head>
+        <p><foreign xml:lang="greek">-ή</foreign>, <foreign xml:lang="greek">-όν</foreign>.</p>
+        <div xml:id="aganos-cunliffe-lex-1" type="textpart">
+          <head>1</head>
+          <p><gloss>Gentle, mild, affectionate</gloss>: <cit><quote xml:lang="greek">ἐπέεσσιν</quote> <bibl n="Hom. Il. 2.164">Il. 2.164</bibl></cit>, <bibl n="Hom. Il. 2.180">180</bibl>, <bibl n="Hom. Il. 2.189">189</bibl>, <bibl n="Hom. Il. 24.772">Il. 24.772</bibl>: <cit><quote xml:lang="greek">ἀ. καὶ ἤπιος</quote> <bibl n="Hom. Od. 2.230">Od. 2.230</bibl></cit>=<bibl n="Hom. Od. 5.8">Od. 5.8</bibl>, <cit><quote xml:lang="greek">μύθοις</quote> <bibl n="Hom. Od. 15.53">Od. 15.53</bibl></cit>.</p>
+        </div>
+
+        <div xml:id="aganos-cunliffe-lex-2" type="textpart">
+          <head>2</head>
+          <p><gloss>Soothing, effecting propitiation, winning acceptance</gloss>: <cit><quote xml:lang="greek">δώροισιν</quote> <bibl n="Hom. Il. 9.113">Il. 9.113</bibl></cit>, <foreign xml:lang="greek">εὐχωλῇσιν</foreign> 499: <bibl n="Hom. Od. 13.357">Od. 13.357</bibl>.</p>
+        </div>
+
+        <div xml:id="aganos-cunliffe-lex-3" type="textpart">
+          <head>3</head>
+          <p><gloss>Of the shafts of Apollo and Artemis, bringing painless death</gloss> <bibl n="Hom. Il. 24.759">Il. 24.759</bibl>: <bibl n="Hom. Od. 3.280">Od. 3.280</bibl> = <bibl n="Hom. Od. 15.411">Od. 15.411</bibl>, <bibl n="Hom. Od. 5.124">Od. 5.124</bibl> =  <bibl n="Hom. Od. 11.173">Od. 11.173</bibl> = <bibl n="Hom. Od. 11.199">199</bibl>.</p>
+        </div>
+      </div>
+
+      <div xml:id="aganophrosyne-cunliffe-lex" type="textpart" n="ἀγανοφροσύνη">
+        <head><foreign xml:lang="greek">ἀγανοφροσύνη</foreign></head>
+        <p><foreign xml:lang="greek">-ης</foreign>, <foreign xml:lang="greek">ἡ</foreign></p>
+<p>[<ref xml:lang="greek" target="aganophron-cunliffe-lex">ἀγανόφρων</ref>.]</p>
+
+        <div type="textpart">
+          <p><gloss>Gentleness of disposition, mildness</gloss> <bibl n="Hom. Il. 24.772">Il. 24.772</bibl>: <bibl n="Hom. Od. 11.203">Od. 11.203</bibl>.</p>
+        </div>
+      </div>
+
+      <div xml:id="aganophron-cunliffe-lex" type="textpart" n="ἀγανόφρων">
+        <head><foreign xml:lang="greek">ἀγανόφρων</foreign></head>
+        <p>[<ref xml:lang="greek" target="aganos-cunliffe-lex">ἀγανός</ref> + <ref xml:lang="greek" target="phren-cunliffe-lex">φρήν</ref>.]</p>
+
+        <div type="textpart">
+          <p><gloss>Of gentle disposition, mild</gloss>: <cit><quote xml:lang="greek">ἀνήρ</quote> <bibl n="Hom. Od. 3.467">Od. 3.467</bibl></cit>.</p>
+        </div>
+      </div>
+
+      <div xml:id="agapazo-cunliffe-lex" type="textpart" n="ἀγαπάζω">
+        <head><foreign xml:lang="greek">ἀγαπάζω</foreign></head>
+        <p>[<ref xml:lang="greek" target="agapao-cunliffe-lex">ἀγαπάω</ref>.]</p>
+<p>(<foreign xml:lang="greek">ἀμφ-</foreign>.)</p>
+        <div xml:id="agapazo-cunliffe-lex-1" type="textpart">
+          <head>1</head>
+          <p>= <ref xml:lang="greek" target="agapao-cunliffe-lex-1"><foreign xml:lang="greek">ἀγαπάω</foreign> 1</ref> <bibl n="Hom. Od. 16.17">Od. 16.17</bibl>.</p>
+         <p>In <term>mid.</term>: <cit><quote xml:lang="greek">οὐδ' ἀγαπαζόμενοι φιλέουσιν</quote> <bibl n="Hom. Od. 6.33">Od. 6.33</bibl></cit>. Cf. <bibl n="Hom. Od. 17.35">Od. 17.35</bibl> = <bibl n="Hom. Od. 22.499">Od. 22.499</bibl>, <bibl n="Hom. Od. 21.224">Od. 21.224</bibl>.</p>
+        </div>
+
+        <div xml:id="agapazo-cunliffe-lex-2" type="textpart">
+          <head>2</head>
+          <p><gloss>To play the host to</gloss>: <cit><quote xml:lang="greek">ὰθάνατον θεόν</quote> <bibl n="Hom. Il. 24.464">Il. 24.464</bibl></cit>.</p>
+        </div>
+      </div>
+
+      <div xml:id="agapao-cunliffe-lex" type="textpart" n="ἀγαπάω">
+        <head><foreign xml:lang="greek">ἀγαπάω</foreign></head>
+        
+        <div xml:id="agapao-cunliffe-lex-1" type="textpart">
+          <head>1</head>
+          <p><gloss>To welcome, greet, caress</gloss> <bibl n="Hom. Od. 23.214">Od. 23.214</bibl>.</p>
+        </div>
+
+        <div xml:id="agapao-cunliffe-lex-2" type="textpart">
+          <head>2</head>
+          <p><gloss>To be contented</gloss>: <cit><quote xml:lang="greek">οὐκ ἀγαπᾷς δ . . ;</quote> <bibl n="Hom. Od. 21.289">Od. 21.289</bibl></cit>.</p>
+        </div>
+      </div>
+ 
+
+    </body>
+  </text>
+</TEI>

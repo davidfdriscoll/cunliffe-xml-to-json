@@ -13,7 +13,9 @@ var fs = require('fs');
 /* one problem is dealing with html-like use of tags like <gloss>
 see discussion at https://github.com/Leonidas-from-XIV/node-xml2js/issues/283 */
 var parser = new xml2js.Parser({includeWhiteChars: 'true',charsAsChildren: 'true',explicitChildren: 'true',preserveChildrenOrder: 'true'});
-const allowed_tags = '<TEI><text><body><head><div><p><gloss><quote><bibl><term>'
+const allowed_tags = '<TEI><text><body><head><div><p><gloss><quote><bibl><term><ref>'
+
+let headwords = [];
 
 // main script; xml2js used here.
 
@@ -27,6 +29,14 @@ function convertFile(file) {
 
       // Execute conversion
       var oldWords = result.TEI.text[0].body[0].div;
+
+      // Create temporary array of words with a) headword, b) display headword, and c) transliteration
+      // for links
+
+      for(let oldWord of oldWords) {
+        headwords.push(parseHeadword(oldWord));
+      }
+
       let words = [];
       for(let oldWord of oldWords) {
         words.push(parseWord(oldWord));
@@ -80,12 +90,30 @@ function toSuperscript(text) {
     return text.replace(superscriptTest, wordToSuperscript);
 }
 
-// Main work of script: conversion of t
+//
+
+function parseHeadword(oldWord) {
+  let newHeadword = {}
+  createHeadword(newHeadword, oldWord);
+  return newHeadword;
+}
+
+function createHeadword(newWord, oldWord) {
+  newWord.displayHeadword = oldWord.head[0]['_'];
+  newWord.headword = oldWord['$']['n'];
+  // if xml:id exists, grab the transliteration from it, removing everything after the first hyphen
+  if(oldWord['$']['xml:id']) {
+    newWord.transliteration = oldWord['$']['xml:id'].split('-')[0];
+  }  
+}
+
+// Main work of script: conversion of each word
 
 function parseWord(oldWord) {
   //This function parses a specific word from the JSON, returning a replacement new word.
   let newWord = {}
-  newWord.headword = oldWord.head[0]['_'];
+
+  createHeadword(newWord, oldWord);
   newWord.etym = [];
   newWord.forms = [];
   newWord.defs = {type: 'definition', data: []};
@@ -340,6 +368,19 @@ function pToTextArray(para) {
     else if (textObj['#name'].includes('term')) {
       newTextObj.textType = 'term';
     }
+    else if (textObj['#name'].includes('ref')) {
+      newTextObj.textType = 'ref';
+      if(!textObj['$']) {
+        // if it does not have a clear target that's a headword, convert to text
+        newTextObj.textType = 'text';
+      }
+      else {
+        // otherwise find and record target
+        let target = textObj?.['$']?.['target']?.split('-')[0];
+        let searchedWord = headwords.find(word => word.transliteration === target);
+        newTextObj.target = searchedWord?.headword;
+      }
+    }    
     newPara.push(newTextObj);
   }
   return {type: 'textArray', data: newPara};
